@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: GPT to Google Sheets Writer
+  description: An API to write responses from GPT into Google Sheets via GAS.
+  version: "1.0.0"
+paths:
+  /write-to-sheet:
+    post:
+      operationId: writeToSheet
+      summary: Write soul answers to Google Sheet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                userName:
+                  type: string
+                soulType:
+                  type: string
+                answer1:
+                  type: string
+                answer2:
+                  type: string
+                answer3:
+                  type: string
+      responses:
+        '200':
+          description: OK

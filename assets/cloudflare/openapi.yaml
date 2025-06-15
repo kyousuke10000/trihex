@@ -1,0 +1,66 @@
+openapi: 3.1.0
+info:
+  title: sendToSoulSheet
+  description: 魂自分史ワークの出力をGoogleスプレッドシートに書き込みます
+  version: 1.0.0
+servers:
+  - url: https://wispy-shape-5e10.kyousuke10000.workers.dev
+paths:
+  /:
+    post:
+      operationId: sendToSoulSheet
+      summary: Truthsphere出力を記入する
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                row:
+                  type: integer
+                week:
+                  type: string
+                意味:
+                  type: string
+                価値観・信念:
+                  type: string
+                現在への影響:
+                  type: string
+                誇り:
+                  type: string
+                再統合メッセージ:
+                  type: string
+                未完了テーマ:
+                  type: string
+                直感の原風景:
+                  type: string
+                無意識の傾向:
+                  type: string
+                内なる衝動:
+                  type: string
+                特性の源泉:
+                  type: string
+                未解読の感覚:
+                  type: string
+                未完了:
+                  type: string
+                信念が生まれた風景:
+                  type: string
+                繰り返してきた選択:
+                  type: string
+                譲れない価値観:
+                  type: string
+                信念が育てた強み:
+                  type: string
+                名前のない信条:
+                  type: string
+                今、胸に残る気づき:
+                  type: string
+              required:
+                - token
+                - row
+                - week
