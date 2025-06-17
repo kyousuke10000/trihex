@@ -22,15 +22,14 @@
 ---
 
 ## 概要
+| ディレクトリ | 役割 |
+| `src/`   | 本番コード（Flask Webhook、Streamlit UI など） |
+| `tests/` | Pytest スモークテスト（インポート確認） |
+| `assets/`| 画像・ロゴ |
+| `docs/`  | 設計資料・ADR |
+| `data/`  | 固定データ |
+| `.claude/` | Claude Code の作業ログ |
 
-| ディレクトリ          | 役割                                                      |
-| --------------- | ------------------------------------------------------- |
-| **`src/`**      | 本番コード（Flask Webhook、Streamlit UI、Cloudflare Workers など） |
-| **`tests/`**    | Pytest スモークテスト（インポート確認）                                 |
-| **`assets/`**   | 画像・ロゴ等                                                  |
-| **`docs/`**     | 設計資料・ADR                                                |
-| **`data/`**     | 診断ロジックで使う固定データ                                          |
-| **`CLAUDE.md`** | Claude Code の作業ログ（必要に応じて整理可）                            |
 
 ---
 
