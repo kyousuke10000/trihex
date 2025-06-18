@@ -1,0 +1,17 @@
+name: 機能リクエスト ✨
+description: こんな機能ほしい！という提案はこちら
+labels: [enhancement]
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 提案内容
+      description: できるだけ具体的に
+      placeholder: 例）診断結果を PDF で一括ダウンロードしたい
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: どう役立つ？
+      description: その機能でどんな課題が解決する？

@@ -1,0 +1,20 @@
+name: バグ報告 🐛
+description: 動かない／落ちた…などを報告するとき
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 何が起きましたか？
+      description: ステップ・エラーメッセージなどを詳しく
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 再現手順
+  - type: input
+    id: env
+    attributes:
+      label: 実行環境
+      description: OS / Python バージョン / ブラウザなど
