@@ -1,0 +1,10 @@
+streamlit
+fpdf
+pandas
+openpyxl
+ephem
+pyswisseph
+pytz
+flask
+slack_sdk
+weasyprint

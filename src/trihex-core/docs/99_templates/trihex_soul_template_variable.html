@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>魂診断レポート | TriHexφ</title>
+    <style>
+        @font-face {
+            font-family: 'NotoSansJP';
+            src: url('NotoSansJP-Regular.ttf') format('truetype');
+        }
+        body {
+            font-family: 'NotoSansJP', sans-serif;
+            margin: 30mm;
+            color: #111;
+            background-color: #fff;
+            line-height: 1.65;
+        }
+        h1 {
+            font-size: 32pt;
+            text-align: center;
+            color: #D94A38;
+            margin-bottom: 0;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 14pt;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .divider {
+            width: 60%;
+            margin: 0 auto 40px;
+            border-bottom: 2px dashed #ccc;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .label {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #444;
+            border-left: 6px solid #D94A38;
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+        .category-block {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .category-card {
+            border: 2px solid #ddd;
+            padding: 15px;
+            border-radius: 12px;
+            background: #fdfdfd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .category-card h3 {
+            font-size: 14pt;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .category-card p {
+            font-weight: bold;
+            font-size: 13pt;
+            margin: 4px 0;
+        }
+        .summary-box {
+            background: #fff8f1;
+            border-left: 6px solid #FFA500;
+            padding: 16px;
+            font-size: 14pt;
+            color: #222;
+        }
+        .poetic-block {
+            background: #f2f2f2;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            font-size: 13pt;
+            letter-spacing: 0.5px;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.08);
+        }
+        .poetic-block p {
+            margin: 6px 0;
+        }
+        .poetic-block p:last-child {
+            font-weight: bold;
+            color: #D94A38;
+            font-size: 14pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>【{{ soul_name }}（{{ soul_reading }}）の魂】</h1>
+    <div class="subtitle">魂型No.{{ soul_no }}｜TriHexφ 魂診断レポート</div>
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="label">三軸カテゴリ</div>
+        <div class="category-block">
+            <div class="category-card">
+                <h3>🟦 先天（生まれ）</h3>
+                <p>{{ eto_expr }} → {{ spiral_symbol }} {{ spiral }}</p>
+            </div>
+            <div class="category-card">
+                <h3>🟨 後天（現在）</h3>
+                <p>{{ present_kanji }} → {{ lineage_symbol }} {{ lineage }}</p>
+            </div>
+            <div class="category-card">
+                <h3>🟥 顕現（未来）</h3>
+                <p>{{ ideal_kanji }} → {{ wisdom_symbol }} {{ wisdom }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="label">魂語り</div>
+        <div class="poetic-block">
+            {% for line in soul_story_lines %}
+                <p>{{ line }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="label">一文要約</div>
+        <div class="summary-box">
+            {{ summary }}
+        </div>
+    </div>
+</body>
+</html>

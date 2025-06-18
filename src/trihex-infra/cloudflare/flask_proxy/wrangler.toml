@@ -1,0 +1,5 @@
+name = "send-to-soulflow-v1"
+type = "javascript"
+account_id = "c4d92c479a399c53bf03682a7e938bd1"
+workers_dev = true
+compatibility_date = "2025-05-16"
