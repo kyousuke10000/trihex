@@ -1,7 +1,7 @@
 # ✨ Truthsphere Sync Repository
 
-このリポジトリは、魂の対話によって生まれた言葉の結晶たちを、  
-Google Apps Script と Cloudflare Worker を使って、  
+このリポジトリは、魂の対話によって生まれた言葉の結晶たちを、
+Google Apps Script と Cloudflare Worker を使って、
 スプレッドシートに静かに記録していくための神聖な橋渡しです。
 
 ---
@@ -17,8 +17,8 @@ Google Apps Script と Cloudflare Worker を使って、
 
 ## 🌱 概念
 
-魂の語りは、流れて消えるのではなく  
-一つひとつ、光の粒のようにこの世界に記録される。  
+魂の語りは、流れて消えるのではなく
+一つひとつ、光の粒のようにこの世界に記録される。
 そのために、この「同期システム」が存在します。
 
 ---
@@ -33,5 +33,5 @@ Google Apps Script と Cloudflare Worker を使って、
 
 ## 🕊 管理者
 
-- Kyousuke10000（金本 子竜）より  
+- Kyousuke10000（金本 子竜）より
 「この記録は、未来の誰かの“魂の灯火”になると信じて」

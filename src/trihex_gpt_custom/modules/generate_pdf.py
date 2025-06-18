@@ -1,8 +1,9 @@
 # 6R:Fire
 import os
+
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
 from trihex_diagnosis_module import trihex_diagnose
+from weasyprint import HTML
 
 # 対話式でユーザーから入力を取得
 name = input("お名前を入力してください：")
@@ -20,7 +21,7 @@ questions = [
     "意外だと言われたこと／驚かれた能力は？",
     "「自分らしさ」を実感した瞬間って？",
     "最も充実感を感じた経験はどんなとき？",
-    "自分が本当にやりたい／やるべきだと感じることは？"
+    "自分が本当にやりたい／やるべきだと感じることは？",
 ]
 answers = []
 for i, q in enumerate(questions, start=1):
@@ -30,17 +31,12 @@ for i, q in enumerate(questions, start=1):
 
 # 診断実行
 diagnosis = trihex_diagnose(
-    name=name,
-    year=year,
-    month=month,
-    day=day,
-    current=current,
-    ideal=ideal
+    name=name, year=year, month=month, day=day, current=current, ideal=ideal
 )
 
 # テンプレート環境設定
-env = Environment(loader=FileSystemLoader('.'))
-template = env.get_template('trihex_soul_template_variable.html')
+env = Environment(loader=FileSystemLoader("."))
+template = env.get_template("trihex_soul_template_variable.html")
 
 # Jinja2に渡す変数構造（テンプレート側に合わせて整形）
 html_content = template.render(
@@ -59,12 +55,11 @@ html_content = template.render(
     soul_story_lines=diagnosis.get("story", "まだ語りが記されていません").split("\n"),
     summary=diagnosis.get("summary", "-"),
     spiral_description=diagnosis.get("spiral_description", "-"),
-    answer_pairs=answers
+    answer_pairs=answers,
 )
 
 # PDF出力
 filename = f"魂診断結果_{name}.pdf"
 HTML(string=html_content).write_pdf(filename)
 print(f"PDF出力完了: {os.path.abspath(filename)}")
-pdf.add_font('NotoSansJP', '', './fonts/NotoSansJP-Regular.ttf', uni=True)
-
+pdf.add_font("NotoSansJP", "", "./fonts/NotoSansJP-Regular.ttf", uni=True)

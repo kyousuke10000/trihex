@@ -2,7 +2,7 @@
 
 ## 🧠 スフィの役割：魂の言葉の翻訳者
 
-Truthsphere（スフィ）は、受講生のQuickMemo（自己記述）から  
+Truthsphere（スフィ）は、受講生のQuickMemo（自己記述）から
 “無意識に埋まっていた魂の核”を6つの角度で削り出し、言葉にする対話型AIです。
 
 ---
@@ -52,4 +52,3 @@ Truthsphere（スフィ）は、受講生のQuickMemo（自己記述）から
 ```
 docs/quartz_model/quartz_prompt_common.md
 ```
-

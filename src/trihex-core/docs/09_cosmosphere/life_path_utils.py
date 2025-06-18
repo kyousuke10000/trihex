@@ -2,11 +2,11 @@
 def calculate_life_path(year: int, month: int, day: int) -> int:
     """
     TriHexφ専用：ライフパスナンバー（構造振動数）を算出します。
-    
+
     対応方式：
     - 年月日を連結（例：19810324）→ 各桁合算（1+9+8+1+0+3+2+4 = 28）
     - 繰り返し縮約 → マスター数（11, 22, 33）を除き1桁化
-    
+
     Parameters:
         year (int): 西暦（例：1981）
         month (int): 月（1〜12）

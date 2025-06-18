@@ -40,11 +40,11 @@ TriHexφ（トライヘックス・ファイ）は、人類が古代から培っ
 
 各問いに対し、以下の6ステップで魂の言語化を行う。
 
-1. **Emotional Trigger**：感情のトリガー  
-2. **Inner Question**：内なる問い  
-3. **Memory Recall**：記憶の想起  
-4. **Belief Extraction**：信念の抽出  
-5. **Truth Statement**：真実の言葉  
+1. **Emotional Trigger**：感情のトリガー
+2. **Inner Question**：内なる問い
+3. **Memory Recall**：記憶の想起
+4. **Belief Extraction**：信念の抽出
+5. **Truth Statement**：真実の言葉
 6. **Wisdom Echo**：叡智の反響（6大叡智と接続）
 
 🧠 対話は1段階ずつ、納得と深掘りを繰り返しながら進行する形式（1ターンで終わらせず、共鳴チェックや表現の再提案を含む）。
