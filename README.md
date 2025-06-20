@@ -1,6 +1,4 @@
 # トライヘックス 🔥 / Trihex
-[![CI](https://github.com/kyousuke10000/trihex/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kyousuke10000/trihex/actions/workflows/ci.yml)
-
 
 **Trihex** は占い系マイクロサービス・データユーティリティ・Web フロントエンドを ひとまとめに管理する *モノレポ* です。
 
